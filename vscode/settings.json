@@ -1,0 +1,18 @@
+{
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "git.openRepositoryInParentFolders": "always",
+  "editor.renderWhitespace": "all",
+  "editor.smoothScrolling": true,
+  "window.menuBarVisibility": "toggle",
+  "workbench.editor.enablePreview": false,
+  "zenMode.fullScreen": false,
+  "numberedBookmarks.navigateThroughAllFiles": "replace",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.activityBar.location": "hidden"
+}
