@@ -1,0 +1,188 @@
+#waybar {
+  font-size: 16px;
+}
+
+#window {
+  padding: 0 10px;
+}
+
+window#waybar {
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  transition-duration: 0s;
+  color: rgba(217, 216, 216, 1);
+  background: #1a1b26;
+}
+
+#workspaces {
+  margin: 0 2px;
+}
+
+#workspaces button {
+  padding: 0 6px;
+  color: #565f89;
+  background: #1a1b26;
+  min-width: 30px;
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#workspaces button.visible {
+  color: #a9b1d6;
+}
+
+#workspaces button.focused {
+  background: #3b4261;
+  color: #7aa2f7;
+}
+
+#workspaces button.urgent {
+  background-color: #f7768e;
+  color: white;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  border-color: #bb9af7;
+  color: #bb9af7;
+}
+
+#workspaces button.focused:hover {
+  color: #bb9af7;
+}
+
+#tray,
+#mode,
+#battery,
+#temperature,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#idle_inhibitor,
+#sway-language,
+#backlight,
+#custom-storage,
+#custom-cpu_speed,
+#custom-powermenu,
+#custom-spotify,
+#custom-weather,
+#custom-mail,
+#custom-media,
+#clock {
+  margin: 0px 1px;
+  padding: 1px 4px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+#network {
+  background: #7aa2f7;
+  color: #1a1b26;
+}
+
+#cpu {
+  background: #f7768e;
+  color: #1a1b26;
+}
+
+#memory {
+  background: #bb9af7;
+  color: #1a1b26;
+}
+
+#temperature {
+  background: #e0af68;
+  color: #1a1b26;
+}
+
+#battery {
+  background: #9ece6a;
+  color: #1a1b26;
+}
+
+#battery.warning {
+  background: #ff9e64;
+  color: black;
+}
+
+#battery.critical {
+  background: #f7768e;
+  color: white;
+}
+
+#battery.charging {
+  background: #73daca;
+  color: black;
+}
+
+#custom-storage {
+  background: #bb9af7;
+  color: #1a1b26;
+}
+
+#custom-storage.warning {
+  background: #ff9e64;
+  color: black;
+}
+
+#custom-storage.critical {
+  background: #f7768e;
+  color: white;
+}
+
+#custom-recorder {
+  font-size: 18px;
+  margin: 2px 5px 0px 5px;
+  background: #f7768e;
+  color: white;
+  padding: 4px 8px;
+}
+
+#backlight {
+  background: #7dcfff;
+  color: #1a1b26;
+}
+
+#clock {
+  background: #1a1b26;
+  color: #a9b1d6;
+}
+
+#pulseaudio {
+  background: #a9b1d6;
+  color: #1a1b26;
+}
+
+#tray {
+  background: #2b2d37;
+  color: black;
+}
+
+#custom-spotify {
+  background: #a9b1d6;
+  color: #1a1b26;
+}
+
+#custom-media {
+  background: #ff9e64;
+  color: black;
+}
+
+#idle_inhibitor {
+  background: #7dcfff;
+  color: #1a1b26;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: black;
+  }
+}

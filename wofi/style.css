@@ -1,0 +1,43 @@
+* {
+    font-family: monospace;
+}
+
+window {
+    margin: 5px;
+    border: none;
+    background-color: #16161d;
+}
+
+#input {
+    margin: 5px;
+    border-radius: 0px;
+    border: none;
+    background-color: #1a1b26;
+    color: #c0caf5;
+}
+
+#inner-box {
+    margin: 5px;
+    background-color: #1a1b26;
+}
+
+#outer-box {
+    margin: 5px;
+    padding: 20px;
+    background-color: #1a1b26;
+}
+
+#text {
+    margin: 5px;
+    color: #c0caf5;
+}
+
+#entry:selected {
+    background-color: #9aa5ce;
+}
+
+#text:selected {
+    color: #16161d;
+    text-decoration-color: #c0caf5;
+}
+
