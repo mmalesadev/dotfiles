@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "asvetliakov.vscode-neovim",
+    "llvm-vs-code-extensions.vscode-clangd",
+    "eamodio.gitlens",
+    "alefragnani.numbered-bookmarks",
+    "esbenp.prettier-vscode"
+  ]
+}
