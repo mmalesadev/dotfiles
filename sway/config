@@ -18,7 +18,7 @@ set $menu MOZ_ENABLE_WAYLAND=1 wofi --allow-images --show drun | xargs swaymsg e
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/arch.png fill
+output * bg ~/Pictures/stars.jpg fill
 #
 # Example configuration:
 #
@@ -26,9 +26,13 @@ output * bg ~/Pictures/arch.png fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
+output HDMI-A-1 resolution 2560x1440 position 0,0
+output DP-2 resolution 2566x1440 position 2560,0
+output eDP-1 disable
+
 # Smart gaps and no titlebars
 smart_gaps on
-gaps inner 7
+gaps inner 25
 default_border pixel 1
 hide_edge_borders smart
 ### Idle configuration
