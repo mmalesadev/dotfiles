@@ -239,7 +239,7 @@ bindsym Ctrl+Mod4+l exec swaylock --color 000000 --hide-keyboard-layout -i ~/Pic
 bindsym $mod+x move workspace to output right
 
 # Picture-in-Picture
-for_window [title="Picture-in-Picture"] floating enable
+# for_window [title="Picture-in-Picture"] floating enable
 
 # Godot debug windows, create them in workspace 4
 assign [instance="Godot_Engine"] 4

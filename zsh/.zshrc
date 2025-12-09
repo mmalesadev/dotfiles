@@ -104,11 +104,12 @@ export BROWSER='firefox'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
+  exec Hyprland
+fi
+
 export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"
 
-if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
-	exec sway
-fi
 export PATH="$HOME/.local/bin:$PATH"
 
 # This is the line adds $GOPATH/bin to $PATH

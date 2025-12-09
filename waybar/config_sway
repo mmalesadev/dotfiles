@@ -6,11 +6,11 @@
     "background": "#000000",
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "hyprland/submap", "sway/scratchpad", "custom/media"],
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
     "modules-center": [],
     "modules-right": ["cpu", "memory", "temperature", "pulseaudio", "backlight", "keyboard-state", "tray", "battery", "clock"],
     // Modules configuration
-    // "hyprland/workspaces": {
+    // "sway/workspaces": {
     //     "disable-scroll": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,
@@ -35,7 +35,7 @@
             "unlocked": ""
         }
     },
-    "hyprland/submap": {
+    "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
     "sway/scratchpad": {
