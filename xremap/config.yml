@@ -1,0 +1,10 @@
+keymap:
+  - name: Emacs binding
+    application:
+      only: [firefox, google-chrome]
+    remap:
+      Alt-q: C-w
+      Alt-t: C-t
+      Alt-j: C-KEY_PAGEUP
+      Alt-k: C-KEY_PAGEDOWN
+      KEY_F1: C-l

@@ -212,6 +212,9 @@ bindsym $mod+r mode "resize"
 # nm-applet
 exec_always --no-startup-id nm-applet
 
+# kanshi
+exec_always kanshi
+
 # Brightness control
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
