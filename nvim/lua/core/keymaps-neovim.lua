@@ -13,8 +13,19 @@ vim.keymap.set("n", "<leader><Left>", ":vertical resize -2<CR>", opts)
 vim.keymap.set("n", "<leader><Right>", ":vertical resize +2<CR>", opts)
 
 -- Buffers
-vim.keymap.set("n", "<A-q>", ":Bdelete<CR>", {}) -- close buffer
+vim.keymap.set("n", "<A-q>", ":Bdelete<CR>", {})          -- close buffer
 vim.keymap.set("n", "<C-Enter>", "<cmd> enew <CR>", opts) -- new buffer
+-- Close all buffers except the active one and neo-tree
+vim.keymap.set("n", "<A-S-q>", function()
+	local current = vim.api.nvim_get_current_buf()
+	for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+		if buf ~= current and vim.api.nvim_buf_is_valid(buf) then
+			if vim.bo[buf].filetype ~= "neo-tree" then
+				vim.api.nvim_buf_delete(buf, { force = false })
+			end
+		end
+	end
+end, opts)
 
 -- Window management
 vim.keymap.set("n", "<A-v>", "<C-w>s", opts)
@@ -31,9 +42,9 @@ vim.keymap.set("n", "<A-j>", ":wincmd j<CR>", opts)
 
 -- Tabs
 vim.keymap.set("n", "<leader>t<Enter>", ":tabnew<CR>", opts) -- open new tab
-vim.keymap.set("n", "<leader>tq", ":tabclose<CR>", opts) -- close current tab
-vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts) --  go to next tab
-vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts) --  go to previous tab
+vim.keymap.set("n", "<leader>tq", ":tabclose<CR>", opts)     -- close current tab
+vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts)         --  go to next tab
+vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts)         --  go to previous tab
 
 -- Quickfick list navigationt
 vim.keymap.set("n", "]q", ":cnext<CR>", opts)
@@ -88,7 +99,7 @@ function MoveBuffer(direction)
 
 	-- If no window exists in that direction, create one
 	if target_win == current_win then
-		vim.cmd(split_cmd) -- Create a new split
+		vim.cmd(split_cmd)          -- Create a new split
 		vim.cmd("wincmd " .. win_cmd) -- Move to the new window
 		target_win = vim.api.nvim_get_current_win()
 	end
@@ -107,3 +118,7 @@ vim.api.nvim_set_keymap("n", "<A-S-Right>", ":lua MoveBuffer('right')<CR>", { no
 vim.api.nvim_set_keymap("n", "<A-S-Left>", ":lua MoveBuffer('left')<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-S-Up>", ":lua MoveBuffer('up')<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-S-Down>", ":lua MoveBuffer('down')<CR>", { noremap = true, silent = true })
+
+-- Copilot enable/disable
+vim.api.nvim_set_keymap("n", "<leader>ce", ":Copilot enable<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>cd", ":Copilot disable<CR>", { noremap = true, silent = true })

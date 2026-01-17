@@ -83,7 +83,13 @@ return {
 			vim.keymap.set("n", "<Tab>", function()
 				cycle(1)
 			end, { silent = true, desc = "Next buffer" })
+			vim.keymap.set("n", "<A-k>", function()
+				cycle(1)
+			end, { silent = true, desc = "Next buffer" })
 			vim.keymap.set("n", "<S-Tab>", function()
+				cycle(-1)
+			end, { silent = true, desc = "Previous buffer" })
+			vim.keymap.set("n", "<A-j>", function()
 				cycle(-1)
 			end, { silent = true, desc = "Previous buffer" })
 		end

@@ -113,6 +113,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # This is the line adds $GOPATH/bin to $PATH
 export PATH=$(go env GOPATH)/bin:$PATH 
 
+if [[ "$XDG_SESSION_DESKTOP" == "sway" ]]; then
+    export _JAVA_AWT_WM_NONREPARENTING=1
+fi
 
 if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
   exec sway --unsupported-gpu

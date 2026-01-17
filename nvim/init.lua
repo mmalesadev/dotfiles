@@ -55,6 +55,8 @@ else
 		require("plugins.comment"),
 		-- For setting marks
 		require("plugins.marks"),
+		-- For inline AI code completion
+		require("plugins.copilot"),
 		-- An addon for training using VIM motions the correct way
 		require("plugins.hardtime"),
 		-- Miscellaneous

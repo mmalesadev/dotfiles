@@ -242,16 +242,16 @@ bindsym Ctrl+Mod4+l exec swaylock --color 000000 --hide-keyboard-layout -i ~/Pic
 bindsym $mod+x move workspace to output right
 
 # Picture-in-Picture
-# for_window [title="Picture-in-Picture"] floating enable
+for_window [title="Picture-in-Picture"] floating enable
 
 # Godot debug windows, create them in workspace 4
 assign [instance="Godot_Engine"] 4
 
 
 # OTS mouse bindings
-bindsym --whole-window BTN_SIDE exec "~/Games/Miracle74/btn_side.sh"
-bindsym --whole-window BTN_EXTRA exec "~/Games/Miracle74/btn_extra.sh"
-bindsym --whole-window BTN_MIDDLE exec "~/Games/Miracle74/btn_middle.sh"
+bindsym --whole-window BTN_SIDE exec "~/Games/Miracle74hotkeys/btn_side.sh"
+bindsym --whole-window BTN_EXTRA exec "~/Games/Miracle74hotkeys/btn_extra.sh"
+bindsym --whole-window BTN_MIDDLE exec "~/Games/Miracle74hotkeys/btn_middle.sh"
 
 #
 # Status Bar:
