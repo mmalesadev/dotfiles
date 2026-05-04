@@ -303,10 +303,10 @@ return {
 		vim.cmd([[nnoremap \ :Neotree<cr><C-w>=]])
 		vim.cmd([[nnoremap <Bar> :Neotree toggle position=left<cr><C-w>=]])
 		-- Keep Neotree opened
-		vim.api.nvim_create_autocmd("VimEnter", {
-			callback = function()
-				require("neo-tree.command").execute({ action = "focus" })
-			end,
-		})
+		-- vim.api.nvim_create_autocmd("VimEnter", {
+		-- 	callback = function()
+		-- 		require("neo-tree.command").execute({ action = "focus" })
+		-- 	end,
+		-- })
 	end,
 }

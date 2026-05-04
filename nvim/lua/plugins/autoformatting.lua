@@ -16,10 +16,10 @@ return {
 				"prettier", -- ts/js formatter
 				"stylua", -- lua formatter
 				"eslint_d", -- ts/js linter
-				"shfmt", -- Shell formatter
+				"shfmt",    -- Shell formatter
 				"checkmake", -- linter for Makefiles
-				"ruff", -- Python linter and formatter
-				"gofumpt", -- Go formatter
+				"ruff",     -- Python linter and formatter
+				"gofumpt",  -- Go formatter
 				"goimports", -- Go formatter
 			},
 			automatic_installation = true,

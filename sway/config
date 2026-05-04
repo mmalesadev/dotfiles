@@ -81,7 +81,7 @@ bindsym Mod3+l exec wtype -P right
 # Start a terminal
 bindsym $mod+Return exec $term
 
-bindsym $mod+Shift+Return exec $term -e zsh -i -c yazi
+bindsym $mod+Shift+Return exec nautilus --new-window
 
 # Kill focused window
 bindsym $mod+q kill

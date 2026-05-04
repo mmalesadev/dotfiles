@@ -25,8 +25,6 @@ if vim.g.vscode then
 	}
 else
 	plugins = {
-		-- Start screen
-		require("plugins.alpha"),
 		-- File tree
 		require("plugins.neotree"),
 		-- Current color theme

@@ -221,7 +221,9 @@ return {
 		}
 
 		-- Gdscript config (not via Mason since it's provided by Godot)
-		require("lspconfig").gdscript.setup(capabilities)
+		-- NOTE: The line below was commented out due to deprecation warning
+		-- require("lspconfig").gdscript.setup(capabilities)
+		vim.lsp.config("gdscript", capabilities)
 
 		-- Ensure the servers and tools above are installed
 		--  To check the current status of installed tools and/or manually install

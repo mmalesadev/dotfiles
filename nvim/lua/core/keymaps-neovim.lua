@@ -13,8 +13,8 @@ vim.keymap.set("n", "<leader><Left>", ":vertical resize -2<CR>", opts)
 vim.keymap.set("n", "<leader><Right>", ":vertical resize +2<CR>", opts)
 
 -- Buffers
-vim.keymap.set("n", "<A-q>", ":Bdelete<CR>", {})          -- close buffer
-vim.keymap.set("n", "<C-Enter>", "<cmd> enew <CR>", opts) -- new buffer
+vim.keymap.set("n", "<A-q>", ":Bdelete<CR>", {}) -- close buffer
+-- vim.keymap.set("n", "<C-Enter>", "<cmd> enew <CR>", opts) -- new buffer
 -- Close all buffers except the active one and neo-tree
 vim.keymap.set("n", "<A-S-q>", function()
 	local current = vim.api.nvim_get_current_buf()
@@ -41,10 +41,10 @@ vim.keymap.set("n", "<A-k>", ":wincmd k<CR>", opts)
 vim.keymap.set("n", "<A-j>", ":wincmd j<CR>", opts)
 
 -- Tabs
-vim.keymap.set("n", "<leader>t<Enter>", ":tabnew<CR>", opts) -- open new tab
-vim.keymap.set("n", "<leader>tq", ":tabclose<CR>", opts)     -- close current tab
-vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts)         --  go to next tab
-vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts)         --  go to previous tab
+-- vim.keymap.set("n", "<leader>t<Enter>", ":tabnew<CR>", opts) -- open new tab
+-- vim.keymap.set("n", "<leader>tq", ":tabclose<CR>", opts) -- close current tab
+-- vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts)     --  go to next tab
+-- vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts)     --  go to previous tab
 
 -- Quickfick list navigationt
 vim.keymap.set("n", "]q", ":cnext<CR>", opts)
